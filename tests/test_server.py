@@ -1,4 +1,4 @@
-from obasoft_jev_mcp.server import (
+from jev_mcp.server import (
     ChoiceQuestion,
     NoulQuestion,
     ScoreQuestion,

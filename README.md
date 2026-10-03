@@ -1,6 +1,6 @@
 # Obasoft Jev MCP
 
-Shared MCP server exposing TypeSafe Jev / System One to Obasoft agents.
+Shared MCP server exposing TypeSafe Jev / System One to agents.
 
 ## Tools
 
@@ -13,20 +13,20 @@ The server uses the official `typesafe-sdk` Python package and reads
 ## Local setup
 
 ```bash
-uv sync --dev
+uv sync --devs
 uv run pytest
 ```
 
 For MCP Inspector development:
 
 ```bash
-TYPESAFE_API_KEY=... uv run mcp dev src/obasoft_jev_mcp/server.py
+TYPESAFE_API_KEY=... uv run mcp dev src/jev_mcp/server.py
 ```
 
 For normal stdio execution:
 
 ```bash
-.venv/bin/obasoft-jev-mcp
+.venv/bin/jev-mcp
 ```
 
 Do not commit API keys or `.env` files.
